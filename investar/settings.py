@@ -30,7 +30,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ratb.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'https://ratbcqr-5909b4c0115d.herokuapp.com/', 'https://ratbcqr.herokuapp.com/']
 #ALLOWED_HOSTS = ['*']
 
 # Application definition
@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'investar.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'investar',
-        'USER': 'postgres',
-        'PASSWORD': 'eugene99',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dcg47g2qq38hrf',
+        'USER': 'rledtkgxlupqdn',
+        'PASSWORD': 'eec0090ca69227e106148791641c5bdbcc0d24bc002d025f31ce27a7d04f2c55',
+        'HOST': 'ec2-54-234-13-16.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
